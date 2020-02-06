@@ -1,61 +1,132 @@
-.home {
+header {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: black;
+}
 
-  .content-section {
-    margin: 30px 0;
+.welcome {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    border-top: @dashed-line;
+    padding-top: 20px;
+  }
+  h1 {
+    padding-top: 20px;
+  }
+  p {
+    padding-top: 20px;
+    border-bottom: @dashed-line;
+  }
+}
+
+.contents {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
+    border-bottom: @dashed-line;
+    .box {
       width: 48%;
-      padding-right: 1%;
+      padding: 10px;
     }
+}
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+.destination {
+  display: flex;
+  flex-direction: column;
+  border-bottom: @dashed-line;
+  margin-top: 16px;
+  div {
+    width: 70%;
+    margin-left: 123px;
+    margin-bottom: 16px;
+  }
+}
+ 
+.content-pick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  h4 {
+    padding-top: 10px;
+  }
+  p {
+    line-height: 1.4;
+  }
+  
+}
 
-      img {
-        border-radius: 10px;
+.content-pick .location .btn {
+  .button();
+}
+
+.vaca-picklist {
+  text-align: center;
+  margin-top: 10px;
+  select {
+    font-size: 15px;
+    padding: 5px 7px;
+    color: navy;
+    font-family: @font-family;
+  }
+  .vacation-packages {
+    font-size: 25px; 
+    font-family: @font-family;
+  }
+}
+  
+.user-input {
+  display: flex;
+  flex-direction: column;
+  ul {
+      float: left;
+      font-size: 15px;
+      padding-top: 14px;
+      
+      li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: @font-family;
       }
-    }
   }
-
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
+  .btn {
+    .destination-button();
   }
+}
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
 
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+@media @mobile {
+  .container {
+    min-width: 350px;
+    margin: 10px;
+  } 
+  
+  .site-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+  .welcome p {
+    font-size: 15px;
+  }
+
+  .contents .box {
+    width: 100%;
+    .vaca-piclist {
+      text-align: left;
     }
   }
-}// home
+
+  .destination div {
+    margin-left: 0px;
+  }
+  
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

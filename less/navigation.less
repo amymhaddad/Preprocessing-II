@@ -1,1 +1,30 @@
 // Navigation Styles here
+
+.site-header {
+    display: flex; 
+    margin-top: 60px;
+    margin-bottom: 20px;
+    
+    .site-nav {
+        width: 81%;
+        text-align: end;
+    }
+        .site-nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+            
+            li {
+                padding: 10px;
+                display: inline-block;
+            }
+            
+            a {
+                text-decoration: none;
+                color: gray;
+                &:hover {
+                    color: darkgray;
+                    background-color: lightskyblue;
+                }
+            }
+}

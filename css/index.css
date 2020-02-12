@@ -1,0 +1,380 @@
+.button {
+  width: 205px;
+  height: 43px;
+  border: 1px solid black;
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 8px;
+}
+.button:hover {
+  cursor: pointer;
+  color: blue;
+}
+.destination-button {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.destination-button:hover {
+  cursor: pointer;
+  color: ivory;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.site-header {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.site-header .site-nav {
+  width: 81%;
+  text-align: end;
+}
+.site-header .site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.site-header li {
+  padding: 10px;
+  display: inline-block;
+}
+.site-header a {
+  text-decoration: none;
+  color: gray;
+}
+.site-header a:hover {
+  color: darkgray;
+  background-color: lightskyblue;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: black;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+}
+.welcome div {
+  border-top: 2px dashed gray;
+  padding-top: 20px;
+}
+.welcome h1 {
+  padding-top: 20px;
+}
+.welcome p {
+  padding-top: 20px;
+  border-bottom: 2px dashed gray;
+}
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px dashed gray;
+}
+.contents .box {
+  width: 48%;
+  padding: 10px;
+}
+.destination {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px dashed gray;
+  margin-top: 16px;
+}
+.destination div {
+  width: 70%;
+  margin-left: 123px;
+  margin-bottom: 16px;
+}
+.content-pick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.content-pick h4 {
+  padding-top: 10px;
+}
+.content-pick p {
+  line-height: 1.4;
+}
+.content-pick .location .btn {
+  width: 205px;
+  height: 43px;
+  border: 1px solid black;
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 8px;
+}
+.content-pick .location .btn:hover {
+  cursor: pointer;
+  color: blue;
+}
+.vaca-picklist {
+  text-align: center;
+  margin-top: 10px;
+}
+.vaca-picklist select {
+  font-size: 15px;
+  padding: 5px 7px;
+  color: navy;
+  font-family: 'Indie Flower', cursive;
+}
+.vaca-picklist .vacation-packages {
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+}
+.user-input {
+  display: flex;
+  flex-direction: column;
+}
+.user-input ul {
+  float: left;
+  font-size: 15px;
+  padding-top: 14px;
+}
+.user-input ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Indie Flower', cursive;
+}
+.user-input .btn {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.user-input .btn:hover {
+  cursor: pointer;
+  color: ivory;
+}
+@media (max-width: 500px) {
+  .container {
+    min-width: 350px;
+    margin: 10px;
+  }
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome p {
+    font-size: 15px;
+  }
+  .contents .box {
+    width: 100%;
+  }
+  .contents .box .vaca-picklist {
+    text-align: left;
+  }
+  .destination div {
+    margin-left: 0px;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
